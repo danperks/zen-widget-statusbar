@@ -2,6 +2,8 @@
 
 `Widget Statusbar` is a configurable bottom widget bar built for Zen Browser.
 
+![Widget Statusbar screenshot](./media/widget-statusbar.png)
+
 It adds a lightweight statusbar-style strip to the bottom of the browser UI with configurable widgets for:
 
 - website domain
