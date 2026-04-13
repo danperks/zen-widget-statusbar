@@ -1,0 +1,140 @@
+/* Widget Statusbar
+ * Configurable Sine widget bar for Zen.
+ */
+:root {
+  --zen-dev-status-height: 22px;
+  --zen-dev-status-reserve: 28px;
+  --zen-dev-status-fg: rgba(28, 28, 32, 0.72);
+  --zen-dev-status-muted: rgba(28, 28, 32, 0.52);
+  --zen-dev-status-border: rgba(28, 28, 32, 0.12);
+  --zen-dev-status-button-bg: rgba(28, 28, 32, 0.08);
+  --zen-dev-status-button-hover: rgba(28, 28, 32, 0.14);
+}
+
+#zen-tabbox-wrapper {
+  position: relative !important;
+}
+
+#main-window.zen-developer-statusbar-active #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+  bottom: var(--zen-dev-status-reserve) !important;
+}
+
+#zen-developer-statusbar-root {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2147483647;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: 14px;
+  min-height: var(--zen-dev-status-height);
+  padding: 0 12px 1px;
+  overflow: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+  background: transparent;
+  color: var(--zen-dev-status-fg);
+  font:
+    600 10px / 1 system-ui,
+    -apple-system,
+    sans-serif;
+  letter-spacing: 0.02em;
+}
+
+#zen-developer-statusbar-root[hidden] {
+  display: none !important;
+}
+
+#zen-developer-statusbar-root,
+#zen-developer-statusbar-root * {
+  box-sizing: border-box;
+}
+
+.zen-developer-statusbar-group {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  max-width: 100%;
+  gap: 10px;
+}
+
+.zen-developer-statusbar-group.is-left {
+  justify-self: start;
+}
+
+.zen-developer-statusbar-group.is-center {
+  justify-self: center;
+  justify-content: center;
+}
+
+.zen-developer-statusbar-group.is-right {
+  justify-self: end;
+  justify-content: flex-end;
+}
+
+.zen-developer-statusbar-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  white-space: nowrap;
+  color: var(--zen-dev-status-fg);
+}
+
+.zen-developer-statusbar-widget-label,
+.zen-developer-statusbar-widget-phase {
+  color: var(--zen-dev-status-muted);
+}
+
+.zen-developer-statusbar-widget-phase {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.zen-developer-statusbar-widget-value {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.zen-developer-statusbar-widget[data-widget-id="domain"] .zen-developer-statusbar-widget-value {
+  max-width: 24ch;
+}
+
+.zen-developer-statusbar-widget-pomodoro {
+  pointer-events: auto;
+}
+
+.zen-developer-statusbar-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.zen-developer-statusbar-button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  padding: 2px 6px;
+  background: var(--zen-dev-status-button-bg);
+  color: var(--zen-dev-status-fg);
+  cursor: pointer;
+  font:
+    600 10px / 1 system-ui,
+    -apple-system,
+    sans-serif;
+  letter-spacing: 0.01em;
+  pointer-events: auto;
+}
+
+.zen-developer-statusbar-button:hover {
+  background: var(--zen-dev-status-button-hover);
+}
+
+.zen-developer-statusbar-button:focus-visible {
+  outline: 1px solid color-mix(in srgb, var(--zen-dev-status-fg) 35%, transparent);
+  outline-offset: 1px;
+}

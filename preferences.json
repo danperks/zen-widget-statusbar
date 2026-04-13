@@ -1,0 +1,322 @@
+[
+  {
+    "type": "text",
+    "label": "Widget Statusbar",
+    "margin": "20px 0 8px 0",
+    "size": "20px"
+  },
+  {
+    "type": "text",
+    "label": "Lower order numbers appear first within the chosen left, centre, or right area. Changes update the statusbar live once the script is running.",
+    "margin": "0 0 18px 0"
+  },
+  {
+    "type": "separator",
+    "label": "Website Domain",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.domain.enabled",
+    "label": "Show website domain",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.domain.side",
+    "label": "Side",
+    "defaultValue": "right",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.domain.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 10,
+    "placeholder": "10"
+  },
+  {
+    "type": "separator",
+    "label": "Clock",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.clock.enabled",
+    "label": "Show clock",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.clock.side",
+    "label": "Side",
+    "defaultValue": "left",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.clock.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 10,
+    "placeholder": "10"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.clock.format",
+    "label": "Clock format",
+    "defaultValue": "locale",
+    "placeholder": false,
+    "options": [
+      { "label": "Locale Default", "value": "locale" },
+      { "label": "12 Hour", "value": "12h" },
+      { "label": "24 Hour", "value": "24h" }
+    ]
+  },
+  {
+    "type": "separator",
+    "label": "Date",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.date.enabled",
+    "label": "Show date",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.date.side",
+    "label": "Side",
+    "defaultValue": "left",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.date.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 20,
+    "placeholder": "20"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.date.format",
+    "label": "Date format",
+    "defaultValue": "short",
+    "placeholder": false,
+    "options": [
+      { "label": "Short", "value": "short" },
+      { "label": "Long", "value": "long" },
+      { "label": "Weekday", "value": "weekday" }
+    ]
+  },
+  {
+    "type": "separator",
+    "label": "Time On Page",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.timeOnPage.enabled",
+    "label": "Show time on page",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.timeOnPage.side",
+    "label": "Side",
+    "defaultValue": "right",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.timeOnPage.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 20,
+    "placeholder": "20"
+  },
+  {
+    "type": "separator",
+    "label": "Page Memory",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.pageMemory.enabled",
+    "label": "Show page memory",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.pageMemory.side",
+    "label": "Side",
+    "defaultValue": "right",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.pageMemory.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 30,
+    "placeholder": "30"
+  },
+  {
+    "type": "separator",
+    "label": "App Memory",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.appMemory.enabled",
+    "label": "Show app memory",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.appMemory.side",
+    "label": "Side",
+    "defaultValue": "right",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.appMemory.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 40,
+    "placeholder": "40"
+  },
+  {
+    "type": "separator",
+    "label": "Battery",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.battery.enabled",
+    "label": "Show battery when Zen exposes it",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.battery.side",
+    "label": "Side",
+    "defaultValue": "left",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.battery.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 30,
+    "placeholder": "30"
+  },
+  {
+    "type": "separator",
+    "label": "Pomodoro",
+    "margin": "16px 0 12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.widgets.pomodoro.enabled",
+    "label": "Show pomodoro timer",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "dropdown",
+    "property": "zen.widgetStatusbar.widgets.pomodoro.side",
+    "label": "Side",
+    "defaultValue": "center",
+    "placeholder": false,
+    "options": [
+      { "label": "Left", "value": "left" },
+      { "label": "Centre", "value": "center" },
+      { "label": "Right", "value": "right" }
+    ]
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.widgets.pomodoro.order",
+    "label": "Order",
+    "value": "number",
+    "defaultValue": 10,
+    "placeholder": "10"
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.pomodoro.workMinutes",
+    "label": "Work minutes",
+    "value": "number",
+    "defaultValue": 25,
+    "placeholder": "25"
+  },
+  {
+    "type": "string",
+    "property": "zen.widgetStatusbar.pomodoro.breakMinutes",
+    "label": "Break minutes",
+    "value": "number",
+    "defaultValue": 5,
+    "placeholder": "5"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.pomodoro.autoStartBreak",
+    "label": "Auto-start break sessions",
+    "defaultValue": true,
+    "margin": "12px 0"
+  },
+  {
+    "type": "checkbox",
+    "property": "zen.widgetStatusbar.pomodoro.autoStartWork",
+    "label": "Auto-start work sessions after breaks",
+    "margin": "12px 0"
+  }
+]

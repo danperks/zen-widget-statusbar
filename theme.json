@@ -1,0 +1,32 @@
+{
+  "id": "zen-developer-statusbar",
+  "name": "Widget Statusbar",
+  "description": "Adds a configurable widget-based bottom status bar for Zen.",
+  "author": "danperks",
+  "version": "1.0.0",
+  "createdAt": "2026-04-11",
+  "updatedAt": "2026-04-13",
+  "homepage": "https://github.com/danperks/zen-widget-statusbar",
+  "readme": "https://raw.githubusercontent.com/danperks/zen-widget-statusbar/main/README.md",
+  "fork": ["zen"],
+  "ai": "yes",
+  "js": true,
+  "style": {
+    "chrome": "chrome.css"
+  },
+  "scripts": {
+    "main.uc.js": {
+      "name": "Widget Statusbar",
+      "description": "Injects the configurable widget bottom bar into Zen.",
+      "include": ["chrome://browser/content/browser.xhtml"],
+      "loadOrder": 10
+    }
+  },
+  "preferences": "preferences.json",
+  "supportsUnload": true,
+  "tags": [
+    "UI",
+    "Widgets",
+    "Status Bar"
+  ]
+}
