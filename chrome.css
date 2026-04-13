@@ -4,11 +4,31 @@
 :root {
   --zen-dev-status-height: 22px;
   --zen-dev-status-reserve: 28px;
-  --zen-dev-status-fg: rgba(28, 28, 32, 0.72);
-  --zen-dev-status-muted: rgba(28, 28, 32, 0.52);
-  --zen-dev-status-border: rgba(28, 28, 32, 0.12);
-  --zen-dev-status-button-bg: rgba(28, 28, 32, 0.08);
-  --zen-dev-status-button-hover: rgba(28, 28, 32, 0.14);
+  --zen-dev-status-fg: color-mix(
+    in srgb,
+    var(--toolbox-textcolor, currentColor) 72%,
+    transparent
+  );
+  --zen-dev-status-muted: color-mix(
+    in srgb,
+    var(--toolbox-textcolor, currentColor) 52%,
+    transparent
+  );
+  --zen-dev-status-border: color-mix(
+    in srgb,
+    var(--toolbox-textcolor, currentColor) 12%,
+    transparent
+  );
+  --zen-dev-status-button-bg: color-mix(
+    in srgb,
+    var(--toolbox-textcolor, currentColor) 8%,
+    transparent
+  );
+  --zen-dev-status-button-hover: color-mix(
+    in srgb,
+    var(--toolbox-textcolor, currentColor) 14%,
+    transparent
+  );
 }
 
 #zen-tabbox-wrapper {

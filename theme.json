@@ -10,7 +10,6 @@
   "readme": "https://raw.githubusercontent.com/danperks/zen-widget-statusbar/main/README.md",
   "fork": ["zen"],
   "ai": "yes",
-  "js": true,
   "style": {
     "chrome": "chrome.css"
   },
