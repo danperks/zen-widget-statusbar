@@ -39,6 +39,12 @@
   bottom: var(--zen-dev-status-reserve) !important;
 }
 
+#main-window[inFullscreen].zen-developer-statusbar-active #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer,
+#main-window[sizemode="fullscreen"].zen-developer-statusbar-active #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer,
+#main-window[inDOMFullscreen].zen-developer-statusbar-active #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+  bottom: 0 !important;
+}
+
 #zen-developer-statusbar-root {
   position: absolute;
   left: 0;
@@ -64,6 +70,12 @@
 }
 
 #zen-developer-statusbar-root[hidden] {
+  display: none !important;
+}
+
+#main-window[inFullscreen] #zen-developer-statusbar-root,
+#main-window[sizemode="fullscreen"] #zen-developer-statusbar-root,
+#main-window[inDOMFullscreen] #zen-developer-statusbar-root {
   display: none !important;
 }
 
